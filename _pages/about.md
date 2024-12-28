@@ -1,25 +1,25 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: profile_pic.jpg
+  image_circular: true
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+
+news: true # display news items
+selected_papers: false # display list of papers marked as "selected={true}"
+social: true # display social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi 👋, I'm **Nikolas**. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am a Research Fellow at <a href='https://www.forth.gr/en/home/' target='_blank'>Foundation for Research & Technology Hellas (FORTH)</a> in Heraklion, affilated with the <a href=''>MensXMachina</a> group under the direction of <a href='https://scholar.google.com/citations?user=7fendUwAAAAJ/' target='_blank'>Ioannis Tsamardinos</a>, <a href='https://sites.google.com/view/softriant/home/' target='_blank'>Sofia Triantafillou</a> and <a href='https://who.rocq.inria.fr/Vassilis.Christophides/' target='_blank'>Vassilis Christophides</a>. I concurrently pursue a Masters degree in Computer Science at the University of Crete. My broad interests involve Causality, Machine Learning and Artificial Intelligence. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Currently, I work on the intersection between Causal Discovery methods and Deep Learning, in both theoretical and practical aspects. Previously, I obtained my degree in <a href='https://www.auth.gr/en/school/math-en/' target='_blank'>Mathematics</a> from <a href ='https://www.auth.gr/en/' target='_blank'>Aristotle University of Thessaloniki</a>. I speak 🇬🇷, 🇬🇧 and 🇫🇷.
+
+My time is spent between <a href='https://en.wikipedia.org/wiki/Thessaloniki' target='_blank'>Thessaloniki</a> and <a href='https://en.wikipedia.org/wiki/Heraklion' target='_blank'>Heraklion</a>. I also enjoy learning 📚, teaching, travelling (inside and out) and working out. I also hold an everliving passion for motorsport and British classic cars.
