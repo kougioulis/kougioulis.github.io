@@ -24,7 +24,7 @@ Fall 23-24, 24-25
   - Agents and Environments, Rationality, Agent Structures
 
 3. **Solving Problems by Searching**
-  - Problem-Solving Agents, State-space search, problem formulation, Search Algorithms: Uninformed (DFS, BFS, uniform-cost) and informed ($$A^*$$, greedy searc) search strategies, Heuristic Functions
+  - Problem-Solving Agents, State-space search, problem formulation, Search Algorithms: Uninformed (DFS, BFS, uniform-cost) and informed ($$A^*$$, greedy search) search strategies, Heuristic Functions
 
 4. **Local Search and Optimization**
   - Local Search Algorithms (hill-climbing, simulated annealing, genetic algorithms), Continuous Space Optimization, Partially Observable Environments, Online Search Agents
