@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: blank # website title (if blank, full name will be used instead)
 first_name: Nikolas
 middle_name:
 last_name: Kougioulis
@@ -38,7 +38,7 @@ repo_trophies:
 # RSS Feed
 # -----------------------------------------------------------------------------
 # will use title and url fields
-# Take a look to https://github.com/jekyll/jekyll-feed for more customization
+# see https://github.com/jekyll/jekyll-feed for more customization
 
 rss_icon: false
 
@@ -71,15 +71,14 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 
 # For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
-# and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
-google_analytics: G-0FGKYMMNXZ # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
+google_analytics: G-0FGKYMMNXZ # Google Analytics measurement ID (format: G-XXXXXXXXXX)
 cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
-pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
-openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
+pirsch_analytics: # Pirsch analytics site ID (length 32 characters)
+openpanel_analytics: # Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
-google_site_verification: # your google-site-verification ID (Google Search Console)
-bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
+google_site_verification: # google-site-verification ID (Google Search Console)
+bing_site_verification: # bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -99,9 +98,10 @@ related_blog_posts:
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
-# Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
+# see https://giscus.app/ to setup for your repo to fill out the information below.
+
 giscus:
-  repo: # <your-github-user-name>/<your-github-repo-name>
+  repo: # <github-user-name>/<github-repo-name>
   repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
   category: Comments # name of the category under which discussions will be created
   category_id: # leave empty or specify your category_id (see https://giscus.app/)
@@ -114,8 +114,8 @@ giscus:
   lang: en
 
 # External sources.
-# If you have blog posts published on medium.com or other external sources,
-# you can display them in your blog by adding a link to the RSS feed.
+# For blog posts published on medium.com or other external sources,
+# display them in the blog by adding a link to the RSS feed.
 #external_sources:
 # - name:
 #   rss_url:
@@ -130,7 +130,7 @@ giscus:
 
 newsletter:
   enabled: false
-  endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
+  endpoint: # loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
   # https://loops.so/docs/forms/custom-form
 
 # -----------------------------------------------------------------------------
@@ -150,12 +150,12 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 5 # blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 3 # blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -200,7 +200,7 @@ keep_files:
   - CNAME
   - .nojekyll
 
-# Plug-ins
+# Plugins
 plugins:
   - jekyll-archives
   - jekyll-email-protect
@@ -251,7 +251,7 @@ terser:
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+  enabled: [year, tags, categories] # enables year, tag and category archives (remove if needed to disable one of them).
   layouts:
     year: archive-year
     tag: archive-tag
@@ -261,7 +261,7 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: #["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of the
+display_tags: #["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of the blog
 display_categories: # ["category"] # these categories will be displayed on the front page of the blog
 
 # -----------------------------------------------------------------------------
@@ -278,7 +278,7 @@ scholar:
   source: /_bibliography/
   bibliography: papers.bib
   bibliography_template: bib
-  # NOTE: if you have latex math in your bibtex, the latex filter
+  # NOTE: if there is latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
   # See https://github.com/alshedivat/al-folio/issues/357.
   bibtex_filters: [latex, smallcaps, superscript]
@@ -293,7 +293,7 @@ scholar:
   group_by: year
   group_order: descending
 
-# Display different badges withs stats for your publications - Customize in _layouts/bib.liquid
+# Display different badges with stats for the publications - Customize in _layouts/bib.liquid
 enable_publication_badges:
   altmetric: false # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
   dimensions: false # Dimensions badge (Customization options: https://badge.dimensions.ai/)
@@ -349,10 +349,10 @@ external_links:
 # Responsive WebP Images
 # -----------------------------------------------------------------------------
 
-# MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
+# MAKE SURE imagemagick is installed and on the PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: true # enables responsive images for the site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 480
     - 800
@@ -369,9 +369,9 @@ imagemagick:
     webp: "-quality 85"
 
 # Lazy loading images
-#   If you enable lazy loading, all images will add the loading="lazy" attribute.
-#   This will make your site load faster, but it may not be supported in all browsers.
-#   You can also set loading="" to other values for specific images to override the default behavior.
+#   If you lazy loading is enabled, all images will add the loading="lazy" attribute.
+#   This will make the site load faster, but it may not be supported in all browsers.
+#   Can also set loading="" to other values for specific images to override the default behavior.
 #   Options: "auto", "eager", "lazy"
 #   See https://web.dev/browser-level-image-lazy-loading/ for more information.
 lazy_loading_images: true # enables lazy loading of images (recommended)
@@ -400,7 +400,7 @@ enable_video_embedding: false # enables video embedding for bibtex entries. If f
 # Library versions
 # -----------------------------------------------------------------------------
 
-# Add the url, version and integrity hash of the libraries you use in your site.
+# Add the url, version and integrity hash of the libraries you use in the site.
 # The integrity hash is used to ensure that the library is not tampered with.
 # Integrity hashes not provided by the libraries were generated using https://www.srihash.org/
 third_party_libraries:
