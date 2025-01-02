@@ -13,7 +13,7 @@ Fall 23-24, 24-25
 
 ### Textbook
 
-- Russell, S. J., & Norvig, P. (2016). Artificial Intelligence: A Modern Approach. Pearson Education.
+- Russell, S. J., & Norvig, P. (2022). Artificial Intelligence: A Modern Approach 4th Edition. Pearson Education.
 
 ### Syllabus
 
