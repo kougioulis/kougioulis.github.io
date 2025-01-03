@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-first-post",
+        },{id: "post-gradient-wars-reparametrization-vs-reinforce",
+      
+        title: "Gradient Wars - Reparametrization vs REINFORCE",
+      
+      description: "A ride through gradient estimators",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/gradient-estimation/";
+        
+      },
+    },{id: "post-first-post",
       
         title: "First post",
       
