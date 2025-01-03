@@ -30,7 +30,7 @@ As an image is a thousand words, I directly borrow an [excellent illustration](h
 
 ## The Problem
 
-Given a random variable $$z \sim p_\theta (z)$$, where $$p_\theta$$ is a parametric distribution and a function $$f$$, for which we wish to compute the gradient of its expected value. For instance, $$f$$ may express a cost function such as the likelihood. If our aim is to minimize the likelihood $$L(\theta) = \mathbb{E}_{z \sim p_{\theta}(z)}[f(z)]$$, or more formally $$\min \left\{ L(\theta) = \mathbb{E}_{Z \sim p_{\theta (z)}} [f(z)] \right\}_\theta$$, then we are interested in evaluating (or at least, estimating) the gradient
+Consider a random variable $$z \sim p_\theta (z)$$, where $$p_\theta$$ is a parametric distribution and a function $$f$$, for which we wish to compute the gradient of its expected value. For instance, $$f$$ may express a cost function such as the likelihood. If our aim is to minimize the likelihood $$L(\theta) = \mathbb{E}_{z \sim p_{\theta}(z)}[f(z)]$$, or more formally $$\min \left\{ L(\theta) = \mathbb{E}_{Z \sim p_{\theta (z)}} [f(z)] \right\}_\theta$$, then we are interested in evaluating (or at least, estimating) the gradient
   
  
 $$
