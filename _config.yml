@@ -16,7 +16,7 @@ keywords:
 lang: en
 icon: 🌸 # may also provide image name in /assets/img/
 
-url: https://kougioulis.github.io # base hostname & protocol
+url: https://nkougioulis.com  #https://kougioulis.github.io # base hostname & protocol
 baseurl: # leave blank for root
 last_updated: false # true to display last updated in the footer
 impressum_path: # path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
