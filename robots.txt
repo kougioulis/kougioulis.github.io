@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://nkougioulis.com/sitemap.xml
+User-agent: * Disallow: Sitemap: https://kougioulis.github.io/sitemap.xml
