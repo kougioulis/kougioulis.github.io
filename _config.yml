@@ -17,7 +17,7 @@ lang: en
 icon: 🌸 # may also provide image name in /assets/img/
 
 url: https://nkougioulis.com  #https://kougioulis.github.io # base hostname & protocol
-baseurl: # leave blank for root
+baseurl: https://nkougioulis.com # leave blank for root
 last_updated: false # true to display last updated in the footer
 impressum_path: # path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: false
@@ -101,8 +101,8 @@ related_blog_posts:
 # see https://giscus.app/ to setup for your repo to fill out the information below.
 
 giscus:
-  repo: # <github-user-name>/<github-repo-name>
-  repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
+  repo: kougioulis/kougioulis.github.io # <github-user-name>/<github-repo-name>
+  repo_id: R_kgDONjWI1w # leave empty or specify your repo_id (see https://giscus.app/)
   category: Comments # name of the category under which discussions will be created
   category_id: # leave empty or specify your category_id (see https://giscus.app/)
   mapping: title # identify discussions by post title
