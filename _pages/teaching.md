@@ -9,7 +9,7 @@ nav_order: 6
 
 ## **CS-487** (Introduction to Artificial Intelligence)
 
-Fall 23-24, 24-25
+Fall 23-24, 24-25 **(Final Year Undergraduate Course)**
 
 ### Textbook
 
@@ -47,7 +47,6 @@ Fall 23-24, 24-25
 11. **AI Planning**
   - Classical Planning, Planning Heuristics, Hierarchical Planning, Nondeterministic Planning, Resource Planning
 
-
 ### Prerequisites
 
 - CS-240 (Data Structures)
@@ -58,9 +57,35 @@ Course material is available on Moodle (<a href='https://elearn.uoc.gr/course/vi
 ---
 
 
+## **CS-577** (Machine Learning)
+
+Fall 24-25 **(Graduate Course)**
+
+### Brief Syllabus
+
+1. Review of Probability Theory
+2. Statistical Hypothesis Testing
+3. Classification Algorithms
+4. Measuring Classification Performance
+5. Estimation of Predictive Performance
+6. Introduction to Automated Machine Learning (AutoML) and Hyperparameter Tuning
+7. Feature Selection
+8. Bayesian Networks and Introduction to Causal Discovery
+
+### Prerequisites
+
+- CS-150 (Programming)
+- CS-217 (Probability Theory)
+- CS-380 (Algorithms)
+
+Course material is available on Moodle (<a href='https://elearn.uoc.gr/course/view.php?id=5414'>e-learn platform</a>).
+
+---
+
+
 ## **CS-119** (Linear Algebra) 
 
-Spring 22-23, 23-24
+Spring 22-23, 23-24, 24-25 **(First Year Undergraduate Course)**
 
 ### Textbook 
 
@@ -81,14 +106,14 @@ Spring 22-23, 23-24
 - Eigenvalues and eigenvectors, Diagonalization of a Matrix, using eigenvalues to solve difference equations, Solving differential equations using eigenvalues, Complex Matrices, Similarity Transformations
 
 
-Course material is available on Moodle (<a href='https://elearn.uoc.gr/course/view.php?id=4936'>e-learn platform</a>).
+Course material is available on Moodle (<a href='https://elearn.uoc.gr/course/view.php?id=5839'>e-learn platform</a>).
 
 ---
 
 
 ## **CS-100** (Introduction to Computer Science)
 
-Fall 22-23
+Fall 22-23 **(First Year Undergraduate Course)**
 
 ### Textbook 
 
