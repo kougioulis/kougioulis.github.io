@@ -4,7 +4,7 @@ title: Gradient Wars - Reparametrization vs REINFORCE
 date: 2025-01-03 11:12:00+0200
 description: A ride through gradient estimators
 tags: VAEs gradient-estimation reparametrization-trick reinforce
-categories:
+categories: Comments # for giscus
 related_posts: false
 featured: false
 
