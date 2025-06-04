@@ -59,7 +59,10 @@ ninja.data = [{
           window.location.href = "/blog/2024/first-post/";
         
       },
-    },{
+    },{id: "news-our-preprint-temporal-causal-based-simulation-for-realistic-time-series-generation-is-available-on-arxiv-https-arxiv-org-abs-2506-02084",
+          title: '🚀 Our preprint Temporal Causal-based Simulation for Realistic Time-series Generation is available on...',
+          description: "",
+          section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
