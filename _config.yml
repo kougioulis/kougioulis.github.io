@@ -269,8 +269,8 @@ display_categories: # ["category"] # these categories will be displayed on the f
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Kougioulis]
+  first_name: [Nikolaos]
 
   style: apa
   locale: en
