@@ -12,7 +12,7 @@ profile:
 
 
 news: true # display news items
-selected_papers: false # display list of papers marked as "selected={true}"
+selected_papers: true # display list of papers marked as "selected={true}"
 social: true # display social icons at the bottom of the page
 ---
 
