@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-gradient-wars-reparametrization-vs-reinforce",
+        },{id: "post-glove80-keyboard-endgame",
+      
+        title: "Glove80: Keyboard Endgame?",
+      
+      description: "It truly fits like a glove.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/glove80/";
+        
+      },
+    },{id: "post-gradient-wars-reparametrization-vs-reinforce",
       
         title: "Gradient Wars - Reparametrization vs REINFORCE",
       
