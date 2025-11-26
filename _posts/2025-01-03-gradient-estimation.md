@@ -21,7 +21,7 @@ Happy new year 🎉🎇🎆! I was cleaning the dust out of some past handwritte
 
 Variational Autoencoders (VAEs), introduced by Kingma and Welling <d-cite key="kingma2013auto"></d-cite>, are a class of deep latent variable models consisting of two coupled, independently parametrized components: an encoder(recognition model) and a decoder (generative model). Without going out of scope with details, the true posterior distribution over the latent variables is intractable to compute directly, so a variational approximation is used instead. A concrete example would be a prior $$p(z)$$ as an isotropic Gaussian distribution and the stochastic encoder is modeled as a multivariate normal $$\mathcal{N}(\mu_\theta(z), \text{diag}(\sigma_\phi(z)))$$, where $$\mu_\theta(z)$$ and $$\sigma_\phi(z)$$ are neural networks. The decoder is similarly structured with a neural network mapping the latent variable $$z$$ back to the data space, thus enabling efficient learning of both the generative process and the inference model.
 
-As an image is a thousand words, I directly borrow an [excellent illustration](https://medium.com/@elzettevanrensburg/generating-the-intuition-behind-variational-auto-encoders-vaes-c7d2f8631a87) of a Probabilistic Autoencoder by Elzette van Rensburg, as discussed before. 
+As an image is a thousand words, I directly borrow an <a href="https://medium.com/@elzettevanrensburg/generating-the-intuition-behind-variational-auto-encoders-vaes-c7d2f8631a87">excellent illustration</a> of a Probabilistic Autoencoder by Elzette van Rensburg, as discussed before. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
