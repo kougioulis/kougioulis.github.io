@@ -6,16 +6,41 @@ layout: default
     <header class="post-header">
       <h1 class="post-title">
         {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-            ><i class="fa-solid fa-file-pdf"></i
-          ></a>
+        {% if page.cv_pdf_en or page.cv_pdf_fr %}
+          <span class="float-right flex items-center space-x-3">
+
+            {% if page.cv_pdf_en %}
+              <a
+                href="{{ page.cv_pdf_en | prepend: 'assets/pdf/' | relative_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="position: relative; display: inline-block;"
+              >
+                <i class="fa-solid fa-file-pdf fa-2x" style="color:#f92080;"></i>
+                <img src="{{ 'assets/img/flags/gb.svg' | relative_url }}"
+                     alt="English"
+                     style="width:25px; position:absolute; top:-4px; right:-4px; border-radius:2px;">
+              </a>
+            {% endif %}
+
+            {% if page.cv_pdf_fr %}
+              <a
+                href="{{ page.cv_pdf_fr | prepend: 'assets/pdf/' | relative_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="position: relative; display: inline-block;"
+              >
+                <i class="fa-solid fa-file-pdf fa-2x" style="color:#f92080;"></i>
+                <img src="{{ 'assets/img/flags/fr.svg' | relative_url }}"
+                     alt="Français"
+                     style="width:25px; position:absolute; top:-4px; right:-4px; border-radius:2px;">
+              </a>
+            {% endif %}
+
+          </span>
         {% endif %}
       </h1>
+
       {% if page.description %}
         <p class="post-description">{{ page.description }}</p>
       {% endif %}
@@ -47,26 +72,48 @@ layout: default
       </div>
     </article>
   </div>
+
 {% else %}
   <div class="post">
     <header class="post-header">
       <h1 class="post-title">
         {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            {% if page.cv_pdf contains '://' %}
-              href="{{ page.cv_pdf }}"
-            {% else %}
-              href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
+
+        {% if page.cv_pdf_en or page.cv_pdf_fr %}
+          <span class="float-right flex items-center space-x-3">
+
+            {% if page.cv_pdf_en %}
+              <a
+                href="{{ page.cv_pdf_en | prepend: 'assets/pdf/' | relative_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="position: relative; display: inline-block;"
+              >
+                <i class="fa-solid fa-file-pdf fa-2x" style="color:#f92080;"></i>
+                <img src="{{ 'assets/img/flags/gb.svg' | relative_url }}"
+                     alt="English"
+                     style="width:25px; position:absolute; top:-4px; right:-4px; border-radius:2px;">
+              </a>
             {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-          >
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>
+
+            {% if page.cv_pdf_fr %}
+              <a
+                href="{{ page.cv_pdf_fr | prepend: 'assets/pdf/' | relative_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="position: relative; display: inline-block;"
+              >
+                <i class="fa-solid fa-file-pdf fa-2x" style="color:#f92080;"></i>
+                <img src="{{ 'assets/img/flags/fr.svg' | relative_url }}"
+                     alt="Français"
+                     style="width:25px; position:absolute; top:-4px; right:-4px; border-radius:2px;">
+              </a>
+            {% endif %}
+
+          </span>
         {% endif %}
       </h1>
+
       {% if page.description %}
         <p class="post-description">{{ page.description }}</p>
       {% endif %}
@@ -80,7 +127,10 @@ layout: default
               {% continue %}
             {% endunless %}
           {% endif %}
-          {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
+          {% if data[0] == 'meta' or data[1].size == 0 %}
+            {% continue %}
+          {% endif %}
+
           <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
@@ -111,7 +161,6 @@ layout: default
                 {% when 'references' %}
                   {% include resume/references.liquid %}
                 {% else %}
-
               {% endcase %}
             </div>
           </div>
