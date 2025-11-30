@@ -23,19 +23,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Click on the icon on the top right to download my CV in English.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
         },{id: "nav-teaching",
           title: "Teaching",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Click on the icon on the top right to download my CV in English.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
           },
         },{id: "post-glove80-keyboard-endgame",
       
@@ -73,7 +73,22 @@ ninja.data = [{
     },{id: "news-our-preprint-temporal-causal-based-simulation-for-realistic-time-series-generation-is-available-on-arxiv-https-arxiv-org-abs-2506-02084",
           title: '🚀 Our preprint Temporal Causal-based Simulation for Realistic Time-series Generation is available on...',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "projects-introduction-to-computer-science-cs-100",
+          title: 'Introduction to Computer Science (CS-100)',
+          description: "Fall 22-23 (First Year Undergraduate Course)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/100_teaching/";
+            },},{id: "projects-linear-algebra-cs-110",
+          title: 'Linear Algebra (CS-110)',
+          description: "Spring 22-23, 23-24, 24-25 (First Year Undergraduate Course)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/110_teaching/";
+            },},{id: "projects-introduction-to-artificial-intelligence-cs-487",
+          title: 'Introduction to Artificial Intelligence (CS-487)',
+          description: "Fall 23-24, 24-25 (Final Year Undergraduate Course)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/487_teaching/";
+            },},{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
