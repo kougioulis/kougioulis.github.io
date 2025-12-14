@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Click on the icon on the top right to download my CV in English.",
+          description: "Click on the icons on the top right to download my CV in English or French.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
