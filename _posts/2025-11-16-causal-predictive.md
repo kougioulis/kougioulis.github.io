@@ -36,7 +36,7 @@ Overall, predictive models excel at recognizing associations. Causal models on t
 If we wish to incorporate learning algorithms into human decision making, we need to trust that the predictions of the algorithm will remain valid if the experimental conditions are changed.
 </blockquote>
 
-In this post, we’ll walk through why causal models matter, how causal reasoning differs from prediction and illustrate the stakes, along with a minimal example. It does not serve as a complete treatment of causality, but as a motivational introduction to the unfamiliar reader. For a thorough treatment, we refer the interested reader to <d-cite key="pearl2009causality"></d-cite>, <d-cite key="spirtes2001causation"></d-cite>, and <d-cite key="pearl2018book"></d-cite>. Chapter 1 of <d-cite key="kougioulis2025large"></d-cite> serves as a detailed version of this blog post.
+In this post, we’ll walk through why causal models matter, how causal reasoning differs from prediction and illustrate the stakes, along with a minimal example. It does not serve as a complete treatment of causality, but as a motivational introduction to the unfamiliar reader. For a thorough treatment, we refer the interested reader to <d-cite key="pearl2009causality" />, <d-cite key="spirtes2001causation" />, and <d-cite key="pearl2018book" />. Chapter 1 of <d-cite key="kougioulis2025large" /> serves as a detailed version of this blog post.
 
 ## Why Causality Matters 
 
@@ -71,16 +71,16 @@ The following table briefly shows scenarios where predictive and causal queries 
 
 ## The Common Cause Principle
 
-But how can observational data mislead us? Reichenbach’s <b>common cause principle</b><d-cite key="reichenbach1956direction"></d-cite> states:
+But how can observational data mislead us? Reichenbach’s <b>common cause principle</b><d-cite key="reichenbach1956direction" /> states:
 
 > 💡 If X and Y are correlated, then either X causes Y, Y causes X, or a hidden confounder causes both.
 
-Observational data cannot tell these apart. This limitation explains famous phenomena like <b>Simpson’s paradox</b><d-cite key="simpson1951interpretation"></d-cite>, where aggregated correlations reverse once you account for confounders. It also explains why <b>SHAP values and feature importance</b>, though useful, are not causal measures. They reflect importance <b>within the model</b>, not influence <b>in the real world</b>.
+Observational data cannot tell these apart. This limitation explains famous phenomena like <b>Simpson’s paradox</b><d-cite key="simpson1951interpretation" />, where aggregated correlations reverse once you account for confounders. It also explains why <b>SHAP values and feature importance</b>, though useful, are not causal measures. They reflect importance <b>within the model</b>, not influence <b>in the real world</b>.
 
 
 ## Randomized Experiments: The Gold Standard for Causality
 
-Given the limitations of observational data, a natural question arises: <i>how can causal effects be measured correctly?</i> Since the seminal work of Ronald Fisher<d-cite key"fisher1935design" />, the gold standard for causal inference has been <b>randomized experimentation</b>, and in particular <b>Randomized Controlled Trials (RCTs)</b>.
+Given the limitations of observational data, a natural question arises: <i>how can causal effects be measured correctly?</i> Since the seminal work of Ronald Fisher<d-cite key="fisher1935design" />, the gold standard for causal inference has been <b>randomized experimentation</b>, and in particular <b>Randomized Controlled Trials (RCTs)</b>.
 
 Randomized experiments aim to isolate causal effects by deliberately intervening on one or more variables of interest while holding all other factors constant <b>in expectation</b>. This is typically achieved through <b>random assignment</b>, which ensures that both observed and unobserved covariates are, on average, balanced across experimental groups. As a result, randomization removes confounding <i>by design</i>, allowing causal effects to be identified without relying on strong modeling assumptions.
 
@@ -120,9 +120,9 @@ This framework allows us to compute three fundamentally different types of queri
 
 | Type               | Question                                 | Example                  |
 | ------------------ | ---------------------------------------- | ------------------------ |
-| <b>Observational</b>  | What do we see?                          | $(P(Y \mid X=x))$          |
-| <b>Interventional</b> | What happens if we <i>force</i> X to a value? | $(P(Y \mid do(X=x)))$      |
-| <b>Counterfactual</b> | What would have happened <i>otherwise</i>?    | $(P(Y_{x'} \mid X=x,Y=y))$ |
+| <b>Observational</b>  | What do we see?                          | $P(Y \mid X=x)$          |
+| <b>Interventional</b> | What happens if we <i>force</i> X to a value? | $P(Y \mid do(X=x))$      |
+| <b>Counterfactual</b> | What would have happened <i>otherwise</i>?    | $P(Y_{x'} \mid X=x,Y=y)$ |
 
 <aside><p>These three different types of queries are known as <b>Pearl's Ladder of Causal Hierarchy</b> <d-cite key="pearl2018book"></d-cite>, where predictive models can only answer queries of level 0, with causal models additionally to level 1 and 2.</p> </aside>
 
