@@ -141,7 +141,7 @@ This is where the field of <b>causal discovery</b> enters. Causal discovery atte
 
 In practice, as the ground truth causal model is unknown, one first discovers the causal structure (the causal DAG and the SCM representation) and then estimates causal effects.
 
-## An Illustrative Example <d-footnote>The provided examples are available in a curated [Github Repository](https://github.com/kougioulis/causality-tutorial) with various causality tutorials for the motivated reader.</d-footnote>
+## An Illustrative Example <d-footnote>The provided examples are available in a curated <a href="https://github.com/kougioulis/causality-tutorial">Github Repository</a> with various causality tutorials for the motivated reader.</d-footnote>
 
 Consider 3 variables, $X,Y,Z$. $X$ and $Z$ are observed to have correlation coefficient $3$. That is, if you observe $1$ unit of change in $X$, you observe $3$ units of change in $Z$. Let's try to answer the following questions:
 
