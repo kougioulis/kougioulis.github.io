@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-glove80-keyboard-endgame",
+        },{id: "post-beyond-prediction-why-causality-matters",
+      
+        title: "Beyond Prediction: Why Causality Matters",
+      
+      description: "And what your ML models are missing",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/causal-predictive/";
+        
+      },
+    },{id: "post-glove80-keyboard-endgame",
       
         title: "Glove80: Keyboard Endgame?",
       
