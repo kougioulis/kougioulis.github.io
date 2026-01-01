@@ -4,7 +4,7 @@ title: "Beyond Prediction: Why Causality Matters"
 giscus_comments: true
 date: 2025-12-31 10:00:00+0200
 description: And what your ML models are missing
-tags: causality, causal-ML, citation
+tags: causality, causal-ML, predictive-models 
 categories: Comments # for giscus
 citation: true 
 thumbnail: assets/img/bde52737.png
